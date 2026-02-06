@@ -1,0 +1,60 @@
+<mujoco model="place">
+    <!--option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" 
+        density="1.225" viscosity="1.8e-5"/-->
+    <!--visual>
+        <global realtime="1"/>
+        <quality shadowsize="16384" numslices="28" offsamples="4" />
+        <headlight diffuse="1 1 1" specular="0.5 0.5 0.5" active="1" />
+        <rgba fog="0 1 0 1" haze="1 0 0 1"/>
+    </visual-->
+    <asset>
+        <mesh name="base.STL" file="STL/base.STL" />
+        <material name="mat_red" rgba="1 0 0 1"/>
+        <material name="mat_green" rgba="0 1 0 1" emission="0.8"/>
+        <material name="mat_white" rgba="1 1 1 1"/>
+        <!--mesh name="qsz.STL" file="STL/qsz.STL" /-->
+    </asset>
+
+    <worldbody>
+        <!-- 地平面 -->
+        <geom name="floor" type="plane" size="100 100 0.1" rgba="1 1 1 1"/>
+
+        <!-- 起始点：红色立方体（正方形） -->
+        <!-- 高度0.1m，边长0.4m -->
+        <body name="place_missile_shelf" pos="0 0 0">
+            <geom type="box" size="0.2 0.2 0.05" material="mat_red"/>
+        </body>
+
+        <!-- 指示线（水平白线） -->
+        <body name="place_direction_line"
+            pos="13 0 -0.5"
+            euler="0 90 0">   <!-- 绕Y轴旋转90°，圆柱水平沿X -->
+            <geom type="cylinder" size="0.01 13" material="mat_white"/>
+        </body>
+
+        <!-- 基地 -->
+        <body name="place_base" pos="26 0 0.2">
+            <!-- 基地 -->
+            <geom type="box" size="0.18 0.18 0.18" rgba="0.5 0.3 0.1 1"/>
+            <!--基地大装甲板-->
+            <body name="place_base_42mm_armor" pos="-0.2 0 0.1" euler="0 -15 0">
+                <geom type="box" size="0.05 0.1 0.005" rgba="0.2 0.2 0.2 1"/>
+            </body>
+            <!-- 倾斜顶部目标 -->
+            <body name="place_base_armor" pos="0 0 0.2" euler="0 -15 0">
+                <joint name="base_armor_y_joint" type="slide" axis="0 1 0" range="-0.5 0.5"/>
+                <geom type="box" size="0.05 0.05 0.005" rgba="0.2 0.2 0.2 1"/>
+                <!-- 基地灯（后方0.05m，上方0.05m） -->
+                <body name="place_base_light" pos="0.15 0 0.15" euler="0 -15 0">
+                    <geom type="cylinder" size="0.025 0.0025" material="mat_green"/>
+                </body>
+            </body>
+
+        </body>
+
+        <!-- 前哨站 -->
+        <!--body name="place_missile_station" pos="0 2 8">
+            <geom type="mesh" mesh="qsz.STL" material="mat_white"/>
+        </body-->
+    </worldbody>
+</mujoco>

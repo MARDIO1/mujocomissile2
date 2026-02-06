@@ -1,0 +1,5 @@
+*.STL
+.vs
+.vscode
+.clinerules
+build
