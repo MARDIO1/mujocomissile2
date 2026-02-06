@@ -1,4 +1,4 @@
-//�����mujoco��ģ�����
+﻿//这个是mujoco的模板代码修改的，
 
 #include <cstdio>
 #include <cstdlib>
@@ -8,14 +8,14 @@
 #include <mujoco/mujoco.h>
 
 // MuJoCo data structures
-mjModel* m = NULL;                  // MuJoCo model
-mjData* d = NULL;                   // MuJoCo data
-mjvCamera cam;                      // abstract camera
+mjModel* m = NULL;                  // MuJoCo model一个巨型结构体
+mjData* d = NULL;                   // MuJoCo data也是一个巨型结构体
+mjvCamera cam;                      // abstract camera相机结构体
 mjvOption opt;                      // visualization options
 mjvScene scn;                       // abstract scene
 mjrContext con;                     // custom GPU context
-
-// mouse interaction
+//都是巨型结构体
+// mouse interaction鼠标交互？
 bool button_left = false;
 bool button_middle = false;
 bool button_right =  false;
@@ -23,7 +23,7 @@ double lastx = 0;
 double lasty = 0;
 
 
-// keyboard callback
+//键盘事件回调函数
 void keyboard(GLFWwindow* window, int key, int scancode, int act, int mods) {
   // backspace: reset simulation
   if (act==GLFW_PRESS && key==GLFW_KEY_BACKSPACE) {
@@ -33,7 +33,7 @@ void keyboard(GLFWwindow* window, int key, int scancode, int act, int mods) {
 }
 
 
-// mouse button callback
+// 鼠标点击回调函数
 void mouse_button(GLFWwindow* window, int button, int act, int mods) {
   // update button state
   button_left = (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT)==GLFW_PRESS);
@@ -44,8 +44,7 @@ void mouse_button(GLFWwindow* window, int button, int act, int mods) {
   glfwGetCursorPos(window, &lastx, &lasty);
 }
 
-
-// mouse move callback
+//鼠标移动回调函数
 void mouse_move(GLFWwindow* window, double xpos, double ypos) {
   // no buttons down: nothing to do
   if (!button_left && !button_middle && !button_right) {
@@ -81,18 +80,18 @@ void mouse_move(GLFWwindow* window, double xpos, double ypos) {
 }
 
 
-// scroll callback
+// 滚动回调函数
 void scroll(GLFWwindow* window, double xoffset, double yoffset) {
   // emulate vertical mouse motion = 5% of window height
   mjv_moveCamera(m, mjMOUSE_ZOOM, 0, -0.05*yoffset, &scn, &cam);
 }
 
 
-// main function
+//主主主主主函数！
 int main(int argc, const char** argv) {
   // check command-line arguments
   if (argc!=2) {
-    std::printf(" USAGE:  basic modelfile\n");
+    std::printf(" 没有通过主函数传参传入的模型！\n");
     return EXIT_FAILURE;
   }
 
@@ -107,15 +106,15 @@ int main(int argc, const char** argv) {
     mju_error("Load model error: %s", error);
   }
 
-  // make data
+  //数据实例化
   d = mj_makeData(m);
 
-  // init GLFW
+  //渲染Init
   if (!glfwInit()) {
     mju_error("Could not initialize GLFW");
   }
 
-  // create window, make OpenGL context current, request v-sync
+  // 创建窗口, make OpenGL context current, request v-sync
   GLFWwindow* window = glfwCreateWindow(1200, 900, "Demo", NULL, NULL);
   glfwMakeContextCurrent(window);
   glfwSwapInterval(1);
