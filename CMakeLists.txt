@@ -12,12 +12,19 @@ FetchContent_Declare(
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(glfw)
-# 2. 包含 MuJoCo 头文件
+
 include_directories("${MUJOCO_DIR}/include")
-# 3. 查找 MuJoCo 库 
 set(MUJOCO_LIB "${MUJOCO_DIR}/lib/mujoco.lib") 
-# 4. 定义可执行文件
-add_executable(uav_sim src/main.cpp)
+
+
+include_directories("${CMAKE_SOURCE_DIR}/src/world"
+                    "${CMAKE_SOURCE_DIR}/src/player"
+                    "${CMAKE_SOURCE_DIR}/src")
+add_executable(uav_sim 
+                      src/main.cpp 
+                      src/world/world.cpp # 加入World实现文件
+                      src/player/player.cpp   # 可选：如果有Player类也加上
+)
 # 5. 链接所有库
 # glfw 来自 FetchContent，opengl32 是 Windows 自带
 target_link_libraries(uav_sim PRIVATE ${MUJOCO_LIB} glfw opengl32)

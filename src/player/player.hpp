@@ -24,9 +24,11 @@ public:
     double lasty = 0;
 
     World& world; // 引用对应的物理世界
-
+    std::string name;
     Player(World& world, std::string title);
     ~Player();
+
+
 };
 
 #endif
