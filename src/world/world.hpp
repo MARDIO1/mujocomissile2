@@ -1,5 +1,5 @@
-#ifndef SIM_WORLD_HPP
-#define SIM_WORLD_HPP
+#ifndef WORLD_HPP
+#define WORLD_HPP
 #include <mujoco/mujoco.h>
 
 class World {

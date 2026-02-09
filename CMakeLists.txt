@@ -19,11 +19,14 @@ set(MUJOCO_LIB "${MUJOCO_DIR}/lib/mujoco.lib")
 
 include_directories("${CMAKE_SOURCE_DIR}/src/world"
                     "${CMAKE_SOURCE_DIR}/src/player"
-                    "${CMAKE_SOURCE_DIR}/src")
+                    "${CMAKE_SOURCE_DIR}/src"
+                    "${CMAKE_SOURCE_DIR}/src/plane"
+                    "${CMAKE_SOURCE_DIR}/src/API")
 add_executable(uav_sim 
                       src/main.cpp 
                       src/world/world.cpp # 加入World实现文件
                       src/player/player.cpp   # 可选：如果有Player类也加上
+                      src/plane/plane.cpp
 )
 # 5. 链接所有库
 # glfw 来自 FetchContent，opengl32 是 Windows 自带
