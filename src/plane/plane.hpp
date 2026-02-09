@@ -1,4 +1,4 @@
-#ifndef AIR_POWER_HPP
+﻿#ifndef AIR_POWER_HPP
 #define AIR_POWER_HPP
 #include "general.hpp"
 #include "world.hpp"

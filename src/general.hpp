@@ -1,4 +1,4 @@
-#ifndef GENERAL_HPP
+﻿#ifndef GENERAL_HPP
 #define GENERAL_HPP
 /*重构这些参数，考虑这样的命名风格：
 1.有物理意义的必须添加单位尾缀，比如质量 mass_kg 惯量I_kgm2 
