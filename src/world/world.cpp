@@ -5,7 +5,8 @@ World::World(const char* model_path) {
     char error[1000] = "Could not load binary model";
     m = mj_loadXML(model_path, nullptr, error, 1000);
     if (!m) {
-        mju_error("从xml加载模型失败，检查你的语法和调用: %s", error);
+        printf("Load model failed: %s\n", error);
+        mju_error("Load model failed, check XML syntax and path.");
     }
     d = mj_makeData(m);
 }

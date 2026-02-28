@@ -1,38 +1,37 @@
 cmake_minimum_required(VERSION 3.16)# 要求用户电脑上的 CMake 版本不得低于 3.16
 project(MujocoUAV)#项目名称
 set(CMAKE_CXX_STANDARD 17)#c++17标准
-set(MUJOCO_DIR "T:/ROBOMASTER_2/tool/mujoco210")#mujoco路径
-# 1. 引入 FetchContent 来自动获取 GLFW
-include(FetchContent)
-FetchContent_Declare(
-  glfw
-  GIT_REPOSITORY https://github.com/glfw/glfw.git
-  GIT_TAG 3.3.8
-)
-set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
-set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(glfw)
 
+# mujoco210 路径（使用项目内相对路径）
+set(MUJOCO_DIR "${CMAKE_SOURCE_DIR}/mujoco/mujoco210-windows-x86_64/mujoco210")
+
+# mujoco210 自带 GLFW，直接使用，不需要 FetchContent
 include_directories("${MUJOCO_DIR}/include")
-set(MUJOCO_LIB "${MUJOCO_DIR}/lib/mujoco.lib") 
-
+set(MUJOCO_LIB "${MUJOCO_DIR}/bin/mujoco210.lib")
+set(GLFW_LIB   "${MUJOCO_DIR}/bin/glfw3.lib")
 
 include_directories("${CMAKE_SOURCE_DIR}/src/world"
                     "${CMAKE_SOURCE_DIR}/src/player"
                     "${CMAKE_SOURCE_DIR}/src"
                     "${CMAKE_SOURCE_DIR}/src/plane"
                     "${CMAKE_SOURCE_DIR}/src/API")
-add_executable(uav_sim 
-                      src/main.cpp 
-                      src/world/world.cpp # 加入World实现文件
-                      src/player/player.cpp   # 可选：如果有Player类也加上
+
+add_executable(uav_sim
+                      src/main.cpp
+                      src/world/world.cpp
+                      src/player/player.cpp
                       src/plane/plane.cpp
 )
-# 5. 链接所有库
-# glfw 来自 FetchContent，opengl32 是 Windows 自带
-target_link_libraries(uav_sim PRIVATE ${MUJOCO_LIB} glfw opengl32)
-# 6. 复制 MuJoCo 的 DLL 到运行目录
+
+# 链接 mujoco210、glfw3、opengl32（Windows 自带）
+target_link_libraries(uav_sim PRIVATE ${MUJOCO_LIB} ${GLFW_LIB} opengl32)
+
+# 复制 mujoco210.dll 和 glfw3.dll 到运行目录
 add_custom_command(TARGET uav_sim POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${MUJOCO_DIR}/bin/mujoco.dll"
-    $<TARGET_FILE_DIR:uav_sim>)
+        "${MUJOCO_DIR}/bin/mujoco210.dll"
+        $<TARGET_FILE_DIR:uav_sim>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${MUJOCO_DIR}/bin/glfw3.dll"
+        $<TARGET_FILE_DIR:uav_sim>
+)

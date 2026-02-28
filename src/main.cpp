@@ -10,7 +10,8 @@
 #include "player.hpp"
 #include "plane.hpp"
 // 主主主主主函数！
-const char path[100] = "T:\\ROBOMASTER_2\\Project\\mujocomissile\\model\\all.xml";
+// 相对路径：exe 在 build/Debug/ 或 build/Release/，model 在项目根/model/
+const char path[200] = "../../model/all.xml";
 int main(int argc, const char **argv)
 {
     World World1(path);
