@@ -1,0 +1,10 @@
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\A4D6A37A1131DC817AF162B855374304\GENERATE.STAMP.RULE
+setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild -BT:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

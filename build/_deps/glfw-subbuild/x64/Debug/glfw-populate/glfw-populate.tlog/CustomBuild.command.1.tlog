@@ -1,0 +1,150 @@
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-MKDIR.RULE
+setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -Dcfgdir=/Debug -P T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-DOWNLOAD.RULE
+setlocal
+cd T:\ROBOMASTER_2\Project\mujocomissile\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+T:
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -P T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-UPDATE.RULE
+setlocal
+cd T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-src
+if %errorlevel% neq 0 goto :cmEnd
+T:
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -Dcan_fetch=YES -P T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-PATCH.RULE
+setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-CONFIGURE.RULE
+setlocal
+cd T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+T:
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-BUILD.RULE
+setlocal
+cd T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+T:
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-INSTALL.RULE
+setlocal
+cd T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+T:
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\B4F9099BE8D7B6020057786CE60E502A\GLFW-POPULATE-TEST.RULE
+setlocal
+cd T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build
+if %errorlevel% neq 0 goto :cmEnd
+T:
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\33FEB88C73BD5DA45B7FF4A7194D5186\GLFW-POPULATE-COMPLETE.RULE
+setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E make_directory T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/Debug/glfw-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -E touch T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/Debug/glfw-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKEFILES\A4D6A37A1131DC817AF162B855374304\GLFW-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild -BT:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild --check-stamp-file T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

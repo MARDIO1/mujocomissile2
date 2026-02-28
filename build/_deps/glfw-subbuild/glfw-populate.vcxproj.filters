@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\b4f9099be8d7b6020057786ce60e502a\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\33feb88c73bd5da45b7ff4a7194d5186\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\a4d6a37a1131dc817af162b855374304\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6F3FB415-9071-30BF-9BE3-9AE48F17DEFC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

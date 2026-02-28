@@ -1,0 +1,7 @@
+﻿  Building Custom Rule T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-src/examples/CMakeLists.txt
+  particles.c
+  tinycthread.c
+  getopt.c
+  glad_gl.c
+  正在生成代码...
+  particles.vcxproj -> T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\Debug\particles.exe

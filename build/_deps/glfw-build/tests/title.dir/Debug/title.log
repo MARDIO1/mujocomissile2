@@ -1,0 +1,6 @@
+﻿  Building Custom Rule T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-src/tests/CMakeLists.txt
+  title.c
+  glad_gl.c
+T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-src\tests\title.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  title.vcxproj -> T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\Debug\title.exe

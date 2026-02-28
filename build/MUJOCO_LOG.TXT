@@ -1,0 +1,6 @@
+Fri Feb  6 17:29:58 2026
+ERROR: Load model error: Error: Error opening file 'T:\ROBOMASTER_2/Project/mujocomissile/model/m2.SLDASM/meshes/m2_link.STL': No such file or directory
+
+Fri Feb  6 17:36:21 2026
+ERROR: Load model error: Error: Error opening file 'T:\ROBOMASTER_2/Project/mujocomissile/model/m2.SLDASM/meshes/m2_link.STL': No such file or directory
+

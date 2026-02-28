@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3F2A76F2-337D-3040-B4A5-4CF938ED2D43}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>T:\ROBOMASTER_2\tool\mujoco210\include;T:\ROBOMASTER_2\Project\mujocomissile\src\world;T:\ROBOMASTER_2\Project\mujocomissile\src\player;T:\ROBOMASTER_2\Project\mujocomissile\src;T:\ROBOMASTER_2\Project\mujocomissile\src\plane;T:\ROBOMASTER_2\Project\mujocomissile\src\API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>T:\ROBOMASTER_2\tool\mujoco210\include;T:\ROBOMASTER_2\Project\mujocomissile\src\world;T:\ROBOMASTER_2\Project\mujocomissile\src\player;T:\ROBOMASTER_2\Project\mujocomissile\src;T:\ROBOMASTER_2\Project\mujocomissile\src\plane;T:\ROBOMASTER_2\Project\mujocomissile\src\API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>T:\ROBOMASTER_2\tool\mujoco210\include;T:\ROBOMASTER_2\Project\mujocomissile\src\world;T:\ROBOMASTER_2\Project\mujocomissile\src\player;T:\ROBOMASTER_2\Project\mujocomissile\src;T:\ROBOMASTER_2\Project\mujocomissile\src\plane;T:\ROBOMASTER_2\Project\mujocomissile\src\API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>T:\ROBOMASTER_2\tool\mujoco210\include;T:\ROBOMASTER_2\Project\mujocomissile\src\world;T:\ROBOMASTER_2\Project\mujocomissile\src\player;T:\ROBOMASTER_2\Project\mujocomissile\src;T:\ROBOMASTER_2\Project\mujocomissile\src\plane;T:\ROBOMASTER_2\Project\mujocomissile\src\API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule T:/ROBOMASTER_2/Project/mujocomissile/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile -BT:/ROBOMASTER_2/Project/mujocomissile/build --check-stamp-file T:/ROBOMASTER_2/Project/mujocomissile/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindGit.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule T:/ROBOMASTER_2/Project/mujocomissile/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile -BT:/ROBOMASTER_2/Project/mujocomissile/build --check-stamp-file T:/ROBOMASTER_2/Project/mujocomissile/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindGit.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule T:/ROBOMASTER_2/Project/mujocomissile/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile -BT:/ROBOMASTER_2/Project/mujocomissile/build --check-stamp-file T:/ROBOMASTER_2/Project/mujocomissile/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindGit.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule T:/ROBOMASTER_2/Project/mujocomissile/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile -BT:/ROBOMASTER_2/Project/mujocomissile/build --check-stamp-file T:/ROBOMASTER_2/Project/mujocomissile/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeCXXCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeRCCompiler.cmake;T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\3.28.1\CMakeSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FetchContent\CMakeLists.cmake.in;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindGit.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;T:\SDK\STM32CubeCLT_1.20.0\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\ROBOMASTER_2\Project\mujocomissile\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\ZERO_CHECK.vcxproj">
+      <Project>{59C5DE30-ABBA-34BB-B8D5-181E81547CFB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\boing.vcxproj">
+      <Project>{C2B31799-F741-3B7F-8420-480610A9BE13}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\clipboard.vcxproj">
+      <Project>{16B17397-EBE0-3195-A60D-2D279BC7FB13}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\cursor.vcxproj">
+      <Project>{96969FA6-F607-36DE-8D71-D7819BAAB752}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\empty.vcxproj">
+      <Project>{DAF9859C-D45E-36E7-99AF-5EEFAF4051C8}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\events.vcxproj">
+      <Project>{424C548A-18F3-3440-99CF-F3CE0306D819}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\gamma.vcxproj">
+      <Project>{B941D951-CFF0-38F5-AEA3-03A50DBDBC5F}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\gears.vcxproj">
+      <Project>{41BCFAF4-5BE1-3DB5-94D8-0C5338B89226}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\src\glfw.vcxproj">
+      <Project>{AAE95181-6624-30E4-BDBC-840D0AC48F23}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\glfwinfo.vcxproj">
+      <Project>{5050D7BD-A970-3CAF-8EF7-C42F0219B0A3}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\heightmap.vcxproj">
+      <Project>{B23294B8-1996-34A3-9198-200D9AE90B89}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\icon.vcxproj">
+      <Project>{6258EE4A-C849-348D-829C-C711704A0D12}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\iconify.vcxproj">
+      <Project>{1912B614-A101-32F5-A60A-77698054F4F6}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\inputlag.vcxproj">
+      <Project>{663A8C81-538C-3087-A491-8BD3462060F7}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\joysticks.vcxproj">
+      <Project>{A39E42C4-CA96-33D3-A2FE-9D8DDABA83E0}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\monitors.vcxproj">
+      <Project>{CEFA6F73-9C71-3A5D-AE36-1D0A226824D9}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\msaa.vcxproj">
+      <Project>{21393150-169A-3108-8B83-BE008DFDEDAE}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\offscreen.vcxproj">
+      <Project>{B9F38BDB-CC78-3204-81CA-66D8BC6607CD}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\opacity.vcxproj">
+      <Project>{0C5D8CC0-7AB3-3AE9-B167-6E4139139795}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\particles.vcxproj">
+      <Project>{4308C81B-A6CC-3C6C-AA96-CF0CD2A14917}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\reopen.vcxproj">
+      <Project>{D9EEB127-CB12-36BF-A4F3-74766886E501}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\sharing.vcxproj">
+      <Project>{BBE585E2-D76C-33F8-940F-4EF0054B34BD}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\simple.vcxproj">
+      <Project>{9366C8CC-0206-301D-ADB7-8EDFFFA19249}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\splitview.vcxproj">
+      <Project>{5710B7B2-D1DF-3C59-84D2-FE35E0AF7532}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\tearing.vcxproj">
+      <Project>{3D2FD375-BDEF-3D33-B736-131ADB330F7A}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\threads.vcxproj">
+      <Project>{6E013EF8-27EC-369F-94D6-E2F6C53213D6}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\timeout.vcxproj">
+      <Project>{8C23EDC1-2781-3AFD-BF6B-A04E3CB72C43}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\title.vcxproj">
+      <Project>{878291F0-8D5C-3660-8CD8-052D0C59354D}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\triangle-vulkan.vcxproj">
+      <Project>{C313D64C-DD4E-332C-BC59-BE8CEF9A0F2C}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\uav_sim.vcxproj">
+      <Project>{CF592513-5948-37BA-8FB6-32F4D73D74E1}</Project>
+      <Name>uav_sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\examples\wave.vcxproj">
+      <Project>{963EE87B-ADD8-3D72-9FBB-1B7ED3C6B32E}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-build\tests\windows.vcxproj">
+      <Project>{534B46AC-22A3-3151-B8EA-BA57FAC7C501}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

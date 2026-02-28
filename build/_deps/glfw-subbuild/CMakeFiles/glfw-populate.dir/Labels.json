@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/a4d6a37a1131dc817af162b855374304/glfw-populate.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/33feb88c73bd5da45b7ff4a7194d5186/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-build.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-download.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-install.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-test.rule"
+		},
+		{
+			"file" : "T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/CMakeFiles/b4f9099be8d7b6020057786ce60e502a/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

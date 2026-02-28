@@ -1,0 +1,7 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The patch step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command (connected)=T:/SDK/STM32CubeCLT_1.20.0/CMake/bin/cmake.exe;-Dcan_fetch=YES;-P;T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-gitupdate.cmake
+command (disconnected)=T:/SDK/STM32CubeCLT_1.20.0/CMake/bin/cmake.exe;-Dcan_fetch=NO;-P;T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-subbuild/glfw-populate-prefix/tmp/glfw-populate-gitupdate.cmake
+work_dir=T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-src

@@ -1,0 +1,10 @@
+^T:\ROBOMASTER_2\PROJECT\MUJOCOMISSILE\BUILD\_DEPS\GLFW-SRC\EXAMPLES\CMAKELISTS.TXT
+setlocal
+T:\SDK\STM32CubeCLT_1.20.0\CMake\bin\cmake.exe -ST:/ROBOMASTER_2/Project/mujocomissile -BT:/ROBOMASTER_2/Project/mujocomissile/build --check-stamp-file T:/ROBOMASTER_2/Project/mujocomissile/build/_deps/glfw-build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

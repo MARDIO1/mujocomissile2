@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="T:\ROBOMASTER_2\Project\mujocomissile\build\_deps\glfw-subbuild\CMakeFiles\a4d6a37a1131dc817af162b855374304\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6F3FB415-9071-30BF-9BE3-9AE48F17DEFC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
