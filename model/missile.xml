@@ -3,7 +3,7 @@
     <statistic center="0 0 0" extent="2"/>
     <!-- 材质 -->
     <asset>
-    <mesh name="m2_link.STL" file="m2.SLDASM/meshes/m2_link.STL" />
+    <mesh name="m2_link.STL" file="STL/plane.STL" />
     </asset>
     <!-- 物理世界 -->
     <worldbody>        

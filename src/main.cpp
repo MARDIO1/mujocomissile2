@@ -1,4 +1,4 @@
-﻿//这个是mujoco的模板代码修改的，
+﻿// 这个是mujoco的模板代码修改的，
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -8,23 +8,29 @@
 
 #include "world.hpp"
 #include "player.hpp"
-//主主主主主函数！
+#include "plane.hpp"
+// 主主主主主函数！
 const char path[100] = "T:\\ROBOMASTER_2\\Project\\mujocomissile\\model\\all.xml";
-int main(int argc, const char** argv) {
-	World World1(path);
-	Player Player1(World1, "render");
-    while (!glfwWindowShouldClose(Player1.window)) {
-        // advance interactive simulation for 1/60 sec
-        //  Assuming MuJoCo can simulate faster than real-time, which it usually can,
-        //  this loop will finish on time for the next frame to be rendered at 60 fps.
-        //  Otherwise add a cpu timer and exit this loop when it is time to render.
+int main(int argc, const char **argv)
+{
+    World World1(path);
+    Player Player1(World1, "render");
+    Plane Plane1(0); // 绑定世界实体
+    
+    while (!glfwWindowShouldClose(Player1.window))
+    {
+
         mjtNum simstart = World1.d->time;
-        while (World1.d->time - simstart < 1.0 / 60.0) {
+        // 真正重要的仿真
+        while (World1.d->time - simstart < 1.0 / 60.0)
+        {
+            /*这里是自定义空气动力学运算部分*/
+
             mj_step(World1.m, World1.d);
         }
-
-        // get framebuffer viewport
-        mjrRect viewport = { 0, 0, 0, 0 };
+        // 后面都是渲染
+        //  get framebuffer viewport
+        mjrRect viewport = {0, 0, 0, 0};
         glfwGetFramebufferSize(Player1.window, &viewport.width, &viewport.height);
 
         // update scene and render
@@ -38,5 +44,5 @@ int main(int argc, const char** argv) {
         glfwPollEvents();
     }
 
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
