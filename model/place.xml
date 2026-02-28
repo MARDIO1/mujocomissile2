@@ -8,7 +8,7 @@
         <rgba fog="0 1 0 1" haze="1 0 0 1"/>
     </visual-->
     <asset>
-        <mesh name="base.STL" file="STL/base.STL" />
+        <!--mesh name="base.STL" file="STL/base.STL" /-->
         <material name="mat_red" rgba="1 0 0 1"/>
         <material name="mat_green" rgba="0 1 0 1" emission="0.8"/>
         <material name="mat_white" rgba="1 1 1 1"/>

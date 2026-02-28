@@ -21,6 +21,7 @@ add_executable(uav_sim
                       src/world/world.cpp
                       src/player/player.cpp
                       src/plane/plane.cpp
+                      src/API/USB.cpp
 )
 
 # 链接 mujoco210、glfw3、opengl32（Windows 自带）
